@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>RoomTibet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;800&family=Montserrat:wght@500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&family=Roboto+Condensed&display=swap" rel="stylesheet">    <title>RoomTibet</title>
 </head>
 <body>
     <header class="header">
@@ -28,7 +30,7 @@
                 <ul class="search__list">
                     <li class="search__item">
                         <label class="search__label" for="location">Локация для тура</label>
-                        <select class="search__select" id="location" name="location" size="3" required>
+                        <select class="search__select" id="location" name="location" size="1" required>
                             <option value="up">На горе</option>
                             <option value="down">Под горой</option>
                             <option value="home">На диване</option>
@@ -44,7 +46,7 @@
                     </li>
                     <li class="search__item">
                         <label class="search__label" for="members">Участники</label>
-                        <select class="search__select" id="members" name="members" size="3" required>
+                        <select class="search__select" id="members" name="members" size="1" required>
                             <option value="4">4 человека</option>
                             <option value="6">6 человек</option>
                             <option value="8">8 человек</option>
@@ -154,57 +156,49 @@
                 <p class="blog__text">делимся впечатлениями</p>
                 <h2 class="blog__title">Блог о путешествиях</h2>
                 <ul class="blog__list">
-                    <li class="blog__item">
-                        <div class="blog__card post">
+                    <li class="blog__item post">
                             <img class="post__image" src="image/italy.jpg" alt="италия" width="230" height="280">
                             <div class="post__info">
                                 <h4 class="post__title">Красивая Италя, какая она в реальности?</h4>
                                 <p class="post__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                <div class="post__source">
+                                    <time datetime="2023-04-01">01/04/2023</time>
+                                    <a class="post__link" href="#">читать статью</a>
+                                </div>
                             </div>
-                            <div class="post__source">
-                                <time datetime="2023-04-01">01/04/2023</time>
-                                <a class="post__link" href="#">читать статью</a>
-                            </div>
-                        </div>
                     </li>
-                    <li class="blog__item">
-                        <div class="blog__card post">
+                    <li class="blog__item post">
                             <img class="post__image" src="image/plane.jpg" alt="самолет" width="230" height="280">
                             <div class="post__info">
                                 <h4 class="post__title">Долой сомнения! Весь мир открыт для вас!</h4>
                                 <p class="post__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                <div class="post__source">
+                                    <time datetime="2023-04-01">01/04/2023</time>
+                                    <a class="post__link" href="#">читать статью</a>
+                                </div>
                             </div>
-                            <div class="post__source">
-                                <time datetime="2023-04-01">01/04/2023</time>
-                                <a class="post__link" href="#">читать статью</a>
-                            </div>
-                        </div>
                     </li>
-                    <li class="blog__item">
-                        <div class="blog__card post">
+                    <li class="blog__item post">
                             <img class="post__image" src="image/alone.jpg" alt="один человек" width="230" height="280">
                             <div class="post__info">
                                 <h4 class="post__title">Как подготовиться к путешествию в одиночку? </h4>
                                 <p class="post__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                <div class="post__source">
+                                    <time datetime="2023-04-01">01/04/2023</time>
+                                    <a class="post__link" href="#">читать статью</a>
+                                </div>
                             </div>
-                            <div class="post__source">
-                                <time datetime="2023-04-01">01/04/2023</time>
-                                <a class="post__link" href="#">читать статью</a>
-                            </div>
-                        </div>
                     </li>
-                    <li class="blog__item">
-                        <div class="blog__card post">
+                    <li class="blog__item post">
                             <img class="post__image" src="image/india.jpg" alt="индия" width="230" height="280">
                             <div class="post__info">
                                 <h4 class="post__title">Индия ... летим?</h4>
-                                <p class="post__text">Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                                <p class="post__text">Для современного мира базовый вектор развития предполагает.</p>
+                                <div class="post__source">
+                                    <time datetime="2023-04-01">01/04/2023</time>
+                                    <a class="post__link" href="#">читать статью</a>
+                                </div>
                             </div>
-                            <div class="post__source">
-                                <time datetime="2023-04-01">01/04/2023</time>
-                                <a class="post__link" href="#">читать статью</a>
-                            </div>
-                        </div>
                     </li>
                 </ul>
                 <a class="blog__link" href="#">Другие материалы</a>
