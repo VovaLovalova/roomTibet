@@ -1,0 +1,142 @@
+// main: ../style.less
+
+.trip {
+    width: 380px;
+    min-height: 500px;
+    position: relative;
+    border-radius: 40px;
+}
+
+.trip__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    border-radius: 40px;
+}
+
+.trip__info {
+    position: absolute;
+    bottom: 0;
+    transition: height 500ms;
+    z-index: 1;
+    padding: 30px 32px 0;
+    background-color: rgba(255,255,255, 0.2);
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trip__price {
+    position: absolute;
+    top: 35px;
+    right: 32px;
+    height: 40px;
+    background-color: rgba(255,255,255, 0.4);
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.trip__stars {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    right: 0;
+    width: 65px;
+    height: 32px;
+    background-color: rgba(253,253,253, 0.4);
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #1A3E3E;
+    padding: 7px 8px;
+    text-align: right;
+    transition: opacity 200ms;
+}
+
+.trip__stars::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    background-image: url(../image/star.svg);
+    top: 6px;
+    left: 12px;
+}
+
+.trip__title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.trip__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.trip__description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    height:-webkit-fill-available;
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 200ms;
+    display: none;
+}
+
+.trip__link {
+    padding: 12px 24px;
+    background-color: #1A3E3E;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: fit-content;
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 1s;
+    display: none;
+}
+
+.trip__link:hover {
+    background-color: @secondtext;
+}
+
+.trip:hover .trip__info {
+    height: 100%;
+}
+
+.trip:hover .trip__stars {
+    opacity: 0;
+}
+
+.trip:hover .trip__description,
+.trip:hover .trip__link {
+    opacity: 1;
+    display: block;
+}
+
+.trip:hover .trip__info {
+    padding: 30px 32px 20px;
+    height: 100%;
+}
+
+.trip:hover .trip__text {
+    margin-bottom: 38px;
+}
